@@ -47,6 +47,21 @@ ul {
   margin: auto;
 }
 
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: var(--Nero);
+  color: var(--light);
+  font-size: 15px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
 /*====== End Main Rules ======*/
 
 /*====== Start Navigation bar ======*/
@@ -86,6 +101,36 @@ ul {
 }
 
 /*====== End Navigation bar ======*/
+
+/* ====== Start Showcase  ======*/
+
+.showcase {
+  width: 100%;
+  height: 400px;
+  /* background: url("/imges/slide1.png");
+  background-position: center;
+  background-size: cover;
+		background-repeat: no-repeat; */
+  background: url("/imges/slide1.png") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.showcase h2,
+p {
+  margin-bottom: 10px;
+}
+
+.showcase .btn {
+  margin-top: 20px;
+}
+
+/* ====== End Showcase  ======*/
 
 /* ====== Start footer ======*/
 
