@@ -6,6 +6,12 @@
 
 /*====== Start Main Rules(Core Styles) ======*/
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* CSS Variables */
 
 :root {
@@ -18,47 +24,28 @@
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--dark);
-  color: var(--light);
-  font-size: 1.1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light);
+  color: var(--black);
+  font-size: 15px;
   line-height: 1.5;
-  text-align: center;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 1em 0;
-}
-
-p {
-  margin: 0;
-  padding: 1em 0;
-}
-
-.btn {
-  display: inline-block;
-  background-color: var(--dark);
-  color: var(--light);
+a {
+  color: #262626;
   text-decoration: none;
-  padding: 1em 2em;
-  margin: 0.5em 0;
-  border: 1px solid var(--primary);
 }
 
-.btn:hover {
-  background-color: var(--whisper);
-  color: var(--dark);
+ul {
+  list-style: none;
 }
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
 /*====== End Main Rules ======*/
 
 /*====== Start Header Showcase ======*/
