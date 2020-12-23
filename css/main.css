@@ -21,6 +21,7 @@
   --light: #fff;
   --whisper: #eaeaea;
   --blue: #2690d4;
+  --Nero: #262626;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
 }
 
 a {
-  color: #262626;
+  color: var(--Nero);
   text-decoration: none;
 }
 
@@ -48,7 +49,43 @@ ul {
 
 /*====== End Main Rules ======*/
 
-/*====== Start Header Showcase ======*/
+/*====== Start Navigation bar ======*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.main-nav .logo {
+  width: 110px; /* make the logo little bit small */
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid var(--Nero);
+}
+
+.main-nav ul li a {
+  padding-bottom: 2px;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/*====== End Navigation bar ======*/
 
 /* ====== Start footer ======*/
 
