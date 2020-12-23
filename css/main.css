@@ -15,11 +15,9 @@
 /* CSS Variables */
 
 :root {
-  --primary: #666;
   --dark: #333;
-  --black: #000;
   --light: #fff;
-  --whisper: #eaeaea;
+  --lightgrey: #f4f4f4;
   --blue: #0067b8;
   --Nero: #262626;
 }
@@ -60,6 +58,15 @@ ul {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+.dark {
+  color: var(--light);
+}
+
+.dark .btn {
+  background-color: var(--lightgrey);
+  color: var(--dark);
 }
 
 /*====== End Main Rules ======*/
@@ -132,18 +139,6 @@ p {
 
 /* ====== End Showcase  ======*/
 
-/* ====== Start footer ======*/
-
-/* ====== End footer ======*/
-
-/* ====== Start Media Queries(Add a Breakpoint) ======*/
-
-/* If the screen size is 700px or up */
-
-@media only screen and (min-width: 700px) {
-  /* ====== End Media Queries ======*/
-}
-
 /* ====== Start Cards Section ======*/
 
 /* Home Cards1 */
@@ -182,6 +177,7 @@ p {
   width: 100%;
   height: 350px;
   background: url("/imges/xbox.png") no-repeat center center/cover;
+  margin-bottom: 20px;
 }
 
 .xbox .content {
@@ -189,8 +185,35 @@ p {
   padding: 50px 0 0 30px;
 }
 
-.xbox p {
+.xbox p,
+.carbon p {
   margin: 10px 0 20px;
 }
 
+/* Carbon */
+
+.carbon {
+  width: 100%;
+  height: 350px;
+  background: url("/imges/carbon.jpg") no-repeat center center/cover;
+  margin-bottom: 20px;
+}
+
+.carbon .content {
+  width: 55%;
+  padding: 100px 0 0 30px;
+}
+
 /* ====== Start Cards Section ======*/
+
+/* ====== Start footer ======*/
+
+/* ====== End footer ======*/
+
+/* ====== Start Media Queries(Add a Breakpoint) ======*/
+
+/* If the screen size is 700px or up */
+
+@media only screen and (min-width: 700px) {
+  /* ====== End Media Queries ======*/
+}
