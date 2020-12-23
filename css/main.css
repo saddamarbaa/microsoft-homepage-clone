@@ -1,0 +1,76 @@
+/* ==========================================
+   main.css
+   These are the final styles for the project.
+   Author:   Saddam Arbaa
+========================================== */
+
+/*====== Start Main Rules(Core Styles) ======*/
+
+/* CSS Variables */
+
+:root {
+  --primary: #666;
+  --dark: #333;
+  --black: #000;
+  --light: #fff;
+  --whisper: #eaeaea;
+  --blue: #2690d4;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--dark);
+  color: var(--light);
+  text-decoration: none;
+  padding: 1em 2em;
+  margin: 0.5em 0;
+  border: 1px solid var(--primary);
+}
+
+.btn:hover {
+  background-color: var(--whisper);
+  color: var(--dark);
+}
+/*====== End Main Rules ======*/
+
+/*====== Start Header Showcase ======*/
+
+/* ====== Start footer ======*/
+
+/* ====== End footer ======*/
+
+/* ====== Start Media Queries(Add a Breakpoint) ======*/
+
+/* If the screen size is 700px or up */
+
+@media only screen and (min-width: 700px) {
+  /* ====== End Media Queries ======*/
+}
