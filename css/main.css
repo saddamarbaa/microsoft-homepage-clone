@@ -211,11 +211,10 @@ p {
   align-items: center;
   justify-content: flex-start;
   margin: 30px 0 30px;
-  background-color: red;
 }
 
+/* mean for every element in  .fllow give  margin-right: 10px; */
 .fllow * {
-  /* mean for every element in  .fllow give  margin-right: 10px; */
   margin-right: 10px;
 }
 
