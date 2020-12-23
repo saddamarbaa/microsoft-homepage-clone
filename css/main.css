@@ -20,7 +20,7 @@
   --black: #000;
   --light: #fff;
   --whisper: #eaeaea;
-  --blue: #2690d4;
+  --blue: #0067b8;
   --Nero: #262626;
 }
 
@@ -143,3 +143,36 @@ p {
 @media only screen and (min-width: 700px) {
   /* ====== End Media Queries ======*/
 }
+
+/* ====== Start Cards Section ======*/
+
+/* Home Cards1 */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.home-cards img {
+  width: 100%;
+  height: 160px; /* for testing my remove latter */
+  margin-bottom: 20px;
+}
+
+.home-cards h3 {
+  margin-bottom: 3px;
+}
+
+.home-cards a {
+  display: inline-block;
+  padding-top: 10px;
+  color: var(--blue);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home-cards a:hover i {
+  margin-left: 10px;
+}
+
+/* ====== Start Cards Section ======*/
