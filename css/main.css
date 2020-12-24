@@ -222,6 +222,8 @@ p {
 
 /* ====== Start Cards Section ======*/
 
+/* ====== Start footer ======*/
+
 /* footer (Links) */
 
 .links {
@@ -242,10 +244,43 @@ p {
   justify-content: center;
 }
 
-.links {
-  line-height: 2.8;
+/*  footer (copyRight)  */
+
+.footer {
+  background-color: var(--grey);
+  color: var(--lightblack);
+  font-size: 12px;
+  padding: 20px 0;
 }
-/* ====== Start footer ======*/
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer div i {
+  margin-right: 10px;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
 
 /* ====== End footer ======*/
 
