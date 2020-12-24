@@ -30,6 +30,8 @@ body {
   color: var(--black);
   font-size: 15px;
   line-height: 1.5;
+  /* TODOO */
+  /* DEBG line height */
 }
 
 a {
@@ -242,6 +244,7 @@ p {
   grid-gap: 10px;
   align-items: flex-start;
   justify-content: center;
+  /* line-height: 2.3; */
 }
 
 /*  footer (copyRight)  */
@@ -268,10 +271,6 @@ p {
   align-items: center;
 }
 
-.footer div i {
-  margin-right: 10px;
-}
-
 .footer ul {
   display: flex;
   flex-wrap: wrap;
@@ -286,8 +285,45 @@ p {
 
 /* ====== Start Media Queries(Add a Breakpoint) ======*/
 
-/* If the screen size is 700px or up */
+/* If the screen size is 700px or smaller */
 
-@media only screen and (min-width: 700px) {
-  /* ====== End Media Queries ======*/
+@media only screen and (max-width: 700px) {
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xbox .content p {
+    display: none;
+  }
+
+  .xbox .content h2 {
+    margin-bottom: 20px;
+  }
+
+  .carbon .content {
+    width: 88%;
+  }
+
+  .links .links-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
+/* If the screen size is 500px or smaller */
+
+@media only screen and (max-width: 500px) {
+  .home-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.links .links-inner {
+  grid-template-columns: 1fr;
+}
+
+.links .links-inner ul {
+  margin-bottom: 20px;
+}
+/* ====== End Media Queries ======*/
