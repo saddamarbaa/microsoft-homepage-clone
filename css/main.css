@@ -22,6 +22,7 @@
   --Nero: #262626;
   --grey: #f2f2f2;
   --lightblack: #616161;
+  --Gray80: #ccc;
 }
 
 body {
@@ -58,6 +59,15 @@ ul {
   background-color: var(--Nero);
   color: var(--light);
   font-size: 15px;
+}
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  display: none;
 }
 
 .btn:hover {
@@ -287,9 +297,48 @@ p {
 
 /* If the screen size is 700px or smaller */
 
-@media only screen and (max-width: 700px) {
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .main-nav ul.right-menu {
+    margin-right: 50px;
+  }
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--grey);
+    border-right: 1px solid var(--Gray80);
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px); /* go off the screen(like display:none) */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    border-bottom: 1px solid var(--Gray80);
+    font-size: 15px;
+  }
+
+  .main-nav ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .main-nav ul.main-menu.show {
+    transform: translateX(-20px); /* show the menu on click */
+  }
+
   .home-cards {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -312,18 +361,18 @@ p {
 
 /* If the screen size is 500px or smaller */
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .home-cards {
-    display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner ul {
+    margin-bottom: 20px;
   }
 }
 
-.links .links-inner {
-  grid-template-columns: 1fr;
-}
-
-.links .links-inner ul {
-  margin-bottom: 20px;
-}
 /* ====== End Media Queries ======*/
