@@ -3,3 +3,5 @@ document
   .addEventListener("click", () =>
     document.querySelector(".main-menu").classList.toggle("show")
   );
+
+function name(params) {}
