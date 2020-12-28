@@ -8,10 +8,22 @@ in this project, I Learned more about modern CSS features and techniques includi
 Click the link blow to see the [GitHub Pages]: (https://saddamarbaa.github.io/project_microsoft_homepage_clone/)
 
 
+### responsive on large screens
+
 ![image](https://user-images.githubusercontent.com/51326421/103183738-f977fb80-48e6-11eb-81e1-faa261809906.png)
 
 
 
 ![image](https://user-images.githubusercontent.com/51326421/103183817-5e335600-48e7-11eb-82b6-861ff22cbd94.png)
+
+
+
+### responsive on small screens
+
+![image](https://user-images.githubusercontent.com/51326421/103206168-cc9b0700-492d-11eb-9d6c-659e32ea8185.png)
+
+
+
+
 
 
